@@ -1,0 +1,24 @@
+micronaut:
+  application:
+    name: spotPriceService
+  http:
+    client:
+      # default set high for tests during build, overridden per environment
+      read-timeout: 10s
+    services:
+      liverates:
+        urls:
+          - https://www.live-rates.com
+        pool:
+          enabled: true
+          max-connections: 100
+        health-check: false
+        connect-timeout: 1s
+      exchangesratesapi:
+        urls:
+          - https://api.exchangeratesapi.io
+        pool:
+          enabled: true
+          max-connections: 100
+        health-check: false
+        connect-timeout: 1s
