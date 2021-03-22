@@ -1,4 +1,4 @@
-## Feature http-client documentation
+## spot-service
 
-- [Micronaut Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
+- Get exchange rates from mutliple exchanges and return best rate
 
